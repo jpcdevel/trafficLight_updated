@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>trafficLight</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Контэйнер -->
+    <div class="container main_part" >
+           
+           <div class="row" style="margin-left: 35%;">
+              <div class="col-lg-4" id="app">
+                    <div class="coloured">
+                            <!-- Первый круг -->
+                           <div class = "height" v-bind:class="{'red': color == 'red'}">          
+                           </div>
+                       <br>
+                       <!-- Второй круг -->
+                               <div class = "height" v-bind:class="{'yellow': color == 'yellow'}">
+                                   <span class="time" v-show = "time1">{{time1}}</span>
+                               </div>
+                           <br>
+                           <!-- Третий круг -->
+                               <div class = "height" v-bind:class="{'green': color == 'green'}"></div>   
+                       </div> 
+                      
+              </div>
+                   
+                  <div class="col-lg-4" id="app2">
+                        <div class="coloured">
+                                <!-- Первый круг -->
+                               <div class = "height" v-bind:class="{'red': color == 'red'}">          
+                               </div>
+                           <br>
+                           <!-- Второй круг -->
+                                   <div class = "height" v-bind:class="{'yellow': color == 'yellow'}">
+                                       <span class="time" v-show = "time1">{{time1}}</span>
+                                   </div>
+                               <br>
+                               <!-- Третий круг -->
+                                   <div class = "height" v-bind:class="{'green': color == 'green'}"></div>
+                                   
+                           </div>  
+                  </div> 
+                  
+           </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script src="script.js"></script>
+</body>
+</html>
